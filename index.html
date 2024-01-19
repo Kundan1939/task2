@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Create Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login or Create Account</h1>
+        <div id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" required>
+            <br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <br>
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="createAccountForm">
+            <label for="createUsername">Create Username:</label>
+            <input type="text" id="createUsername" required>
+            <br>
+            <label for="createPassword">Create Password:</label>
+            <input type="password" id="createPassword" required>
+            <br>
+            <button onclick="createAccount()">Create Account</button>
+        </div>
+        <div id="loginMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
